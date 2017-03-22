@@ -49,17 +49,16 @@
 
 
 activate :blog do |blog|
-  # set options on blog
   blog.name = "videos"
   blog.prefix = "videos"
-  blog.permalink = "{title}.html"
+  blog.permalink = "{title}"
+  blog.layout = "video-layout"
   blog.new_article_template = "source/article-templates/video-template.erb"
 end
 
 activate :blog do |blog|
-  # set options on blog
   blog.name = "text"
-  blog.permalink = "{title}.html"
+  blog.permalink = "{title}"
   blog.prefix = "text"
 end
 
