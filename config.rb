@@ -53,6 +53,7 @@ activate :blog do |blog|
   blog.prefix = "videos"
   blog.permalink = "{title}"
   blog.layout = "video-layout"
+  blog.tag_template = "tag.html"
   blog.new_article_template = "source/article-templates/video-template.erb"
 end
 
@@ -69,6 +70,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :directory_indexes
+
+activate :dragonfly_thumbnailer
 
 # Build-specific configuration
 configure :build do

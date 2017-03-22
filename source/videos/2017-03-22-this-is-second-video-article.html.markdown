@@ -5,7 +5,7 @@ youtubecode: 6v2L2UGZJAM
 videotime: "13:26"
 introtext: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 image: middleman-02.jpg
-tags:
+tags: middleman, article two, world
 ---
 
 
