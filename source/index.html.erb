@@ -27,5 +27,28 @@ title: Welcome to Middleman
         <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag, 'videos') %></li>
       <% end %>
     </ol>
+    <br>
+
+    <div class="clearfix">
+      <h2>Friends</h2>
+      <% data.people.friends.each do |friend| %>
+        <%= friend %>
+        <br>
+      <% end %>
+    </div>
+
+    <div class="clearfix">
+      <h2>Movies</h2>
+      <% data.movies.movies.each do |movie| %>
+      <ul>
+        <li>Title: <%= movie.title%></li>
+        <li>Director: <%= movie.director%></li>
+        <li>Actors: <%= movie.actors%></li>
+        <li><img src='<%= movie.poster%>'></li>
+      </ul>
+      <% end %>
+    </div>
+
+
 
 </div>
